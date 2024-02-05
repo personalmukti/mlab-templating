@@ -1,0 +1,10 @@
+:root {
+  /* Shadow */
+  --shadow-drop: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+
+  /* Shadow dengan warna khusus */
+  --shadow-custom-color: drop-shadow(2px 2px 4px #ff0000);
+
+  /* Shadow dengan efek inset */
+  --shadow-inset: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}

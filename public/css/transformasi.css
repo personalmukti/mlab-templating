@@ -1,0 +1,43 @@
+:root {
+  /* Transformasi translasi */
+  --transform-translate: translate(10px, 20px);
+
+  /* Transformasi translasi X */
+  --transform-translate-x: translateX(30px);
+
+  /* Transformasi translasi Y */
+  --transform-translate-y: translateY(40px);
+
+  /* Transformasi rotasi */
+  --transform-rotate: rotate(45deg);
+
+  /* Transformasi rotasi X */
+  --transform-rotate-x: rotateX(45deg);
+
+  /* Transformasi rotasi Y */
+  --transform-rotate-y: rotateY(45deg);
+
+  /* Transformasi rotasi Z */
+  --transform-rotate-z: rotateZ(45deg);
+
+  /* Transformasi skala */
+  --transform-scale: scale(1.5);
+
+  /* Transformasi skala X */
+  --transform-scale-x: scaleX(2);
+
+  /* Transformasi skala Y */
+  --transform-scale-y: scaleY(0.5);
+
+  /* Transformasi skew */
+  --transform-skew: skew(10deg, 20deg);
+
+  /* Transformasi skew X */
+  --transform-skew-x: skewX(10deg);
+
+  /* Transformasi skew Y */
+  --transform-skew-y: skewY(20deg);
+
+  /* Transformasi matriks */
+  --transform-matrix: matrix(1, 0.5, -0.5, 1, 0, 0);
+}
