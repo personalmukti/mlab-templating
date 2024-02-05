@@ -1,0 +1,110 @@
+:root {
+  /* Animasi putar (rotate) */
+  --anim-rotate: rotateAnimation 1s linear infinite;
+
+  /* Animasi melayang (float) */
+  --anim-float: floatAnimation 1.5s ease-in-out infinite;
+
+  /* Animasi bounce */
+  --anim-bounce: bounceAnimation 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+
+  /* Animasi pertumbuhan (grow) */
+  --anim-grow: growAnimation 0.5s ease-out forwards;
+
+  /* Animasi memudar (fade) */
+  --anim-fade: fadeAnimation 1s ease-in-out infinite alternate;
+
+  /* Animasi bergoyang (shake) */
+  --anim-shake: shakeAnimation 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+
+  /* Animasi pusing (spin) */
+  --anim-spin: spinAnimation 2s linear infinite;
+
+  /* Animasi pulsasi (pulse) */
+  --anim-pulse: pulseAnimation 1s ease-in-out infinite;
+
+  /* Animasi kedip (blink) */
+  --anim-blink: blinkAnimation 1s step-start infinite;
+
+  /* Animasi geser (slide) */
+  --anim-slide: slideAnimation 0.5s ease-in-out infinite alternate;
+
+  /* Animasi melayang dan memutar (float and rotate) */
+  --anim-float-rotate: floatRotateAnimation 2s ease-in-out infinite;
+
+  --anim-float-rotate-left: floatRotateLeftAnimation 2s ease-in-out infinite;
+}
+
+/* Keyframes untuk animasi putar */
+@keyframes rotateAnimation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Keyframes untuk animasi melayang */
+@keyframes floatAnimation {
+  0%, 100% { transform: translateY(-10px); }
+  50% { transform: translateY(10px); }
+}
+
+/* Keyframes untuk animasi bounce */
+@keyframes bounceAnimation {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
+/* Keyframes untuk animasi pertumbuhan */
+@keyframes growAnimation {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+/* Keyframes untuk animasi memudar */
+@keyframes fadeAnimation {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* Keyframes untuk animasi bergoyang */
+@keyframes shakeAnimation {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+/* Keyframes untuk animasi pusing */
+@keyframes spinAnimation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Keyframes untuk animasi pulsasi */
+@keyframes pulseAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Keyframes untuk animasi kedip */
+@keyframes blinkAnimation {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Keyframes untuk animasi geser */
+@keyframes slideAnimation {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+}
+
+/* Keyframes untuk animasi melayang dan memutar */
+@keyframes floatRotateAnimation {
+  0%, 100% { transform: translateY(-10px) rotate(0deg); }
+  50% { transform: translateY(10px) rotate(180deg); }
+}
+
+@keyframes floatRotateLeftAnimation {
+  0%, 100% { transform: translateY(-10px) rotate(0deg); }
+  50% { transform: translateY(10px) rotate(-180deg); }
+}

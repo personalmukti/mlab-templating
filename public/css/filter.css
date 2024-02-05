@@ -1,0 +1,28 @@
+:root {
+  /* Filter blur */
+  --filter-blur: blur(5px);
+
+  /* Filter brightness */
+  --filter-brightness: brightness(150%);
+
+  /* Filter contrast */
+  --filter-contrast: contrast(150%);
+
+  /* Filter grayscale */
+  --filter-grayscale: grayscale(50%);
+
+  /* Filter hue-rotate */
+  --filter-hue-rotate: hue-rotate(90deg);
+
+  /* Filter invert */
+  --filter-invert: invert(50%);
+
+  /* Filter opacity */
+  --filter-opacity: opacity(75%);
+
+  /* Filter saturate */
+  --filter-saturate: saturate(200%);
+
+  /* Filter sepia */
+  --filter-sepia: sepia(50%);
+}

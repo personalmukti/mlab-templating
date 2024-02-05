@@ -1,0 +1,227 @@
+@import "animasi.css";
+@import "transformasi.css";
+@import "filter.css";
+@import "shadow.css";
+@import "backdrop.css";
+@import "variables.css";
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navbar Base Styles */
+.mlab-navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.mlab-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mlab-logo {
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Toggler Button */
+.mlab-toggler {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Navbar Collapse */
+.mlab-collapse {
+  display: flex;
+  align-items: center;
+}
+
+.mlab-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.mlab-nav-item {
+  margin-left: 20px;
+}
+
+.mlab-nav-item:first-child {
+  margin-left: 0;
+}
+
+.mlab-nav-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.mlab-nav-link:hover {
+  background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .mlab-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mlab-toggler {
+    display: block;
+  }
+
+  .mlab-collapse {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .mlab-nav {
+    flex-direction: column;
+  }
+
+  .mlab-nav-item {
+    margin: 0;
+  }
+
+  .mlab-nav-link {
+    padding: 10px 20px;
+  }
+
+  .mlab-toggler.active + .mlab-collapse {
+    display: flex;
+  }
+}
+
+.theme-selector {
+  margin-left: 20px;
+}
+
+.mlab-theme-select {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+/* Light Theme */
+.mlab-navbar.light {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.mlab-navbar.light .mlab-logo,
+.mlab-navbar.light .mlab-nav-link {
+  color: #343a40;
+}
+
+.mlab-navbar.light .mlab-nav-link:hover {
+  background-color: rgba(52, 58, 64, 0.1);
+}
+
+/* Dark Theme */
+.mlab-navbar.dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.mlab-navbar.dark .mlab-logo,
+.mlab-navbar.dark .mlab-nav-link {
+  color: #fff;
+}
+
+.mlab-navbar.dark .mlab-nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Blue Theme */
+.mlab-navbar.blue {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.mlab-navbar.blue .mlab-logo,
+.mlab-navbar.blue .mlab-nav-link {
+  color: #fff;
+}
+
+.mlab-navbar.blue .mlab-nav-link:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Styles */
+.mlab-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mlab-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.mlab-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.mlab-close:hover,
+.mlab-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Button Styles */
+.mlab-theme-selector-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mlab-theme-selector-btn:hover {
+  background-color: #0056b3;
+}
+
+.mlab-theme-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mlab-theme-btn {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.mlab-theme-btn:hover {
+  background-color: #f8f9fa;
+}
